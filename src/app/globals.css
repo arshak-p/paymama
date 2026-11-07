@@ -367,8 +367,8 @@ html.mo [data-band] { clip-path: inset(6% 6% 6% 6% round 40px); }
 .dl .eyebrow { color: rgba(255,255,255,.85); letter-spacing: .1em; } .dl h2 { font-size: clamp(36px, 5vw, 60px); line-height: 1.04; letter-spacing: -.045em; }
 .dl .sub { margin-top: 14px; color: rgba(255,255,255,.88); }
 .badges { display: flex; gap: 12px; margin-top: 26px; flex-wrap: wrap; }
-.sbadge { background: var(--ink); border-radius: 14px; padding: 9px 18px; line-height: 1.15; transition: transform var(--d-fast) var(--e-standard), background-color 200ms; }
-.sbadge:hover { transform: translateY(-3px); background: #17191d; } .sbadge:active { transform: scale(.97); }
+.sbadge { background: var(--ink); border-radius: 14px; padding: 9px 18px; line-height: 1.15; }
+.sbadge { cursor: default; opacity: .95; }
 .sbadge small { display: block; font-size: 11.5px; opacity: .8; } .sbadge b { font-size: 19px; font-weight: 600; font-family: var(--font-head), sans-serif; letter-spacing: -.02em; }
 .wl { background: #fff; color: var(--ink); border-radius: 24px; padding: 20px; }
 .wl h4 { font-family: var(--font-body), sans-serif; font-size: 16px; letter-spacing: 0; margin-bottom: 14px; }
@@ -389,7 +389,9 @@ html.mo [data-band] { clip-path: inset(6% 6% 6% 6% round 40px); }
 /* footer */
 .footer { background: var(--black); color: #fff; margin-top: -40px; padding: 130px 0 36px; position: relative; z-index: 0; }
 .dl { z-index: 1; }
-.footer__grid { display: grid; grid-template-columns: 1.7fr 1fr 1fr 1fr; gap: 30px; }
+.footer__grid { display: grid; grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr 1.3fr; gap: 30px; }
+.footer .contact li { font-size: 15px; line-height: 1.5; margin-bottom: 14px; color: #fff; }
+.footer .contact span { display: block; font-size: 12.5px; color: var(--g3); margin-bottom: 2px; }
 .footer p.about { color: var(--g3); margin-top: 18px; max-width: 420px; font-size: 16px; }
 .footer h5 { margin: 0 0 14px; font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--g3); font-weight: 600; }
 .footer li { margin-bottom: 8px; font-size: 16px; }

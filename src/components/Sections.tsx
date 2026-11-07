@@ -309,7 +309,7 @@ export function Security() {
 export function Footer() {
   const cols: [string, [string, string][]][] = [
     ["Product", [["Features", "#features"], ["How it works", "#how"], ["Security", "#security"], ["Download", "#download"]]],
-    ["Company", [["About", "#about"], ["FAQ", "#faq"], ["hello@[paymama-domain]", "#"]]],
+    ["Company", [["About", "#about"], ["FAQ", "#faq"]]],
     ["Legal", [["Privacy policy", "#"], ["Terms of use", "#"], ["Cookie policy", "#"]]],
   ];
   return (
@@ -326,6 +326,13 @@ export function Footer() {
               <ul>{ls.map(([n, href]) => <li key={n}><a className="ulink" href={href}>{n}</a></li>)}</ul>
             </div>
           ))}
+          <div>
+            <h5>Contact</h5>
+            <ul className="contact">
+              <li><span>Customer service</span>[customer service email]<br />[customer service phone]</li>
+              <li><span>Address</span>[company address]</li>
+            </ul>
+          </div>
         </div>
         <div className="footer__bar">
           <span>© 2026 Pay Mama. All rights reserved.</span>

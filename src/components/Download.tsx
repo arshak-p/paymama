@@ -51,8 +51,8 @@ export function Download() {
           <h2 data-mask="words">Put your money in its place.</h2>
           <p className="sub" data-reveal>Pay Mama is launching on iPhone and Android.</p>
           <div className="badges" data-stagger="0.08">
-            <a className="sbadge" href="#download"><small>Coming soon on the</small><b>App Store</b></a>
-            <a className="sbadge" href="#download"><small>Coming soon on</small><b>Google Play</b></a>
+            <div className="sbadge"><small>Coming soon on the</small><b>App Store</b></div>
+            <div className="sbadge"><small>Coming soon on</small><b>Google Play</b></div>
           </div>
         </div>
         <form className="wl" onSubmit={submit} noValidate data-reveal data-wl>
